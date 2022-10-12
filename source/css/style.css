@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "SF Compact Display";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/SF Compact Display Regular.woff2") format("woff2"), url("../fonts/SF Compact Display Regular.woff") format("woff");
+  font-display: swap;
+}
+body {
+  background-color: #DBEEEE;
+  height: 100vh;
+  font-family: 'SF Compact Display', sans-serif;
+  letter-spacing: 0.05em;
+  font-size: 24px;
+  color: #000000;
+  line-height: 133.8%;
+}
+.nav-list {
+  text-transform: uppercase;
+  font-size: 21px;
+  color: #3D9090;
+}
+.features-list {
+  font-size: 16px;
+}
+.features-list__term {
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */
