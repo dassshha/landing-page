@@ -1,15 +1,27 @@
 .description {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding-left: 1.875vw;
+  margin-bottom: 2.5vh;
 
 
   &__container {
-    width: 37.5vw;
-    .make-overflow(65%);
+    width: 80vw;
+    .make-overflow(35%);
   }
 
   &__lighting {
     margin-bottom: 1.25vh;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: normal;
+    margin-bottom: 0;
+
+    &__container {
+      width: 37.5vw;
+      .make-overflow(65%);
+    }
   }
 }
