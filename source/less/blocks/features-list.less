@@ -1,7 +1,19 @@
 .features-list {
-  font-size: 16px;
+  font-size: @feature-list-text-font-size;
+  width: 70%;
+  .make-overflow(50%);
+
 
   &__term {
     font-weight: bold;
+
+  }
+
+  &__row {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 0.5vh;
   }
 }
+

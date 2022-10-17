@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ease</title>
   <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.4.1/build/cssreset/cssreset-min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -9,8 +10,8 @@
 </head>
 <body>
 <header class="header">
-  <a class="header__logo">
-    <img src="img/ease.svg" alt="Ease" width="219" height="45">
+  <a class="logo header__logo">
+    <img src="img/ease.svg" alt="Ease">
   </a>
   <nav class="nav header__nav">
     <ul class="nav-list">
@@ -22,48 +23,65 @@
   </nav>
 </header>
 <main class="main">
-  <h1>Lighting shop</h1>
+  <h1 class="visually-hidden">Lighting shop</h1>
   <section class="collection">
-    <section class="description collection__description">
-      <p class="description__lighting">
-        Collection of lighting is inspired by the geometric works of the great
-        Suprematist artists Kissitzky and Kazimir Malevich.
-      </p>
-      <p class="description__theory">
-        Suprematism is a modernist movement in the art of the early twentieth century,
-        focused on the basic geometric forms, such as circles, squares, lines and rectangles.
-        The geometric structure of the lamps will always look like a small art objects in your house.
-      </p>
+    <article class="description collection__description">
+      <div class="description__container">
+        <p class="description__lighting">
+          Collection of lighting is inspired by the geometric works of the great
+          Suprematist artists Kissitzky and Kazimir Malevich.
+        </p>
+        <p class="description__theory">
+          Suprematism is a modernist movement in the art of the early twentieth century,
+          focused on the basic geometric forms, such as circles, squares, lines and rectangles.
+          The geometric structure of the lamps will always look like a small art objects in your house.
+        </p>
+      </div>
+    </article>
+    <section class="info collection__info">
+      <div class="circle info__container info__circle">
+        <dl class="features-list">
+          <div class="features-list__row">
+            <dt class="features-list__term">Material:</dt>
+            <dd class="features-list__definition">Copper</dd>
+          </div>
+          <div class="features-list__row">
+            <dt class="features-list__term">Dimensions (cm):</dt>
+            <dd class="features-list__definition">H 33 x W 15 x D 15</dd>
+          </div>
+          <div class="features-list__row">
+            <dt class="features-list__term">Net Weight:</dt>
+            <dd class="features-list__definition">2,5 kg</dd>
+          </div>
+          <div class="features-list__row">
+            <dt class="features-list__term">Electrification:</dt>
+            <dd class="features-list__definition">LED 10W | G9 |  220-240V | 50 Hz</dd>
+          </div>
+        </dl>
+      </div>
+      <img class="info__img" src="img/medium-pic.png" alt="#">
+          <div class="widget">
+            <ul class="widget-list widget__list">
+              <li class="widget-card widget-card_active widget-list__item">
+                <img class="widget__img"  src="img/mini-pic.png" alt="#" >
+              </li>
+              <li class="widget-card widget-card_active widget-list__item">
+                <img class="widget__img" src="img/mini-pic.png" alt="#" >
+              </li>
+              <li class="widget-card widget-card_active widget-list__item">
+                <img class="widget__img" src="img/mini-pic.png" alt="#" >
+              </li>
+            </ul>
+            <div class="widget__button-container">
+              <button class="button button_light"><span class="visually-hidden">Turn to light mode</span></button>
+              <button class="button button_dark"><span class="visually-hidden">Turn to dark mode</span></button>
+            </div>
+          </div>
     </section>
-    <section class="info">
-      <dl class="features-list">
-        <dt class="features-list__term">Material:</dt>
-        <dd class="features-list__definition">Copper</dd>
-        <dt class="features-list__term">Dimensions (cm):</dt>
-        <dd class="features-list__definition">H 33 x W 15 x D 15</dd>
-        <dt class="features-list__term">Net Weight:</dt>
-        <dd class="features-list__definition">2,5 kg</dd>
-        <dt class="features-list__term">Electrification:</dt>
-        <dd class="features-list__definition">LED 10W | G9 |  220-240V | 50 Hz</dd>
-      </dl>
-      <img class="info__img" src="#" alt="#">
-    </section>
-    <div class="widget">
-      <ul class="widget-list">
-        <li class="widget-list__item">
-          <img src="#" alt="#">
-        </li>
-        <li class="widget-list__item">
-          <img src="#" alt="#">
-        </li>
-        <li class="widget-list__item">
-          <img src="#" alt="#">
-        </li>
-      </ul>
-      <button class="button button_light"><span>Turn to light mode</span></button>
-      <button class="button button_dark"><span>Turn to dark mode</span></button>
-    </div>
-    <img src="#"alt="#">
+    <figure class="collection__big-picture big_picture">
+      <img src="img/big-pic.jpg"alt="#">
+      <figcaption class="visually-hidden">Большая картинка</figcaption>
+    </figure>
   </section>
 </main>
 </body>
