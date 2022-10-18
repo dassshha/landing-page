@@ -12,5 +12,8 @@
   "scripts": {
     "start": "gulp"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "jquery": "^3.6.1"
+  }
 }

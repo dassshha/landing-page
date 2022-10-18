@@ -41,36 +41,36 @@
     <section class="info collection__info">
       <div class="circle info__container info__circle">
         <dl class="features-list">
-          <div class="features-list__row">
-            <dt class="features-list__term">Material:</dt>
-            <dd class="features-list__definition">Copper</dd>
-          </div>
-          <div class="features-list__row">
-            <dt class="features-list__term">Dimensions (cm):</dt>
-            <dd class="features-list__definition">H 33 x W 15 x D 15</dd>
-          </div>
-          <div class="features-list__row">
-            <dt class="features-list__term">Net Weight:</dt>
-            <dd class="features-list__definition">2,5 kg</dd>
-          </div>
-          <div class="features-list__row">
-            <dt class="features-list__term">Electrification:</dt>
-            <dd class="features-list__definition">LED 10W | G9 |  220-240V | 50 Hz</dd>
-          </div>
+<!--          <div class="features-list__row">-->
+<!--            <dt class="features-list__term">Material:</dt>-->
+<!--            <dd class="features-list__definition">Copper</dd>-->
+<!--          </div>-->
+<!--          <div class="features-list__row">-->
+<!--            <dt class="features-list__term">Dimensions (cm):</dt>-->
+<!--            <dd class="features-list__definition">H 33 x W 15 x D 15</dd>-->
+<!--          </div>-->
+<!--          <div class="features-list__row">-->
+<!--            <dt class="features-list__term">Net Weight:</dt>-->
+<!--            <dd class="features-list__definition">2,5 kg</dd>-->
+<!--          </div>-->
+<!--          <div class="features-list__row">-->
+<!--            <dt class="features-list__term">Electrification:</dt>-->
+<!--            <dd class="features-list__definition">LED 10W | G9 |  220-240V | 50 Hz</dd>-->
+<!--          </div>-->
         </dl>
       </div>
-      <img class="info__img" src="img/medium-pic.png" alt="#">
+<!--      <img class="info__img" src="img/medium-pic.png" alt="#">-->
           <div class="widget">
-            <ul class="widget-list widget__list">
-              <li class="widget-card widget-card_active widget-list__item">
-                <img class="widget__img"  src="img/mini-pic.png" alt="#" >
-              </li>
-              <li class="widget-card widget-card_active widget-list__item">
-                <img class="widget__img" src="img/mini-pic.png" alt="#" >
-              </li>
-              <li class="widget-card widget-card_active widget-list__item">
-                <img class="widget__img" src="img/mini-pic.png" alt="#" >
-              </li>
+            <ul class="widget-list widget__list" id="widget-list">
+<!--              <li class="widget-card widget-card_active widget-list__item">-->
+<!--                <img class="widget__img"  src="img/mini-pic.png" alt="#" >-->
+<!--              </li>-->
+<!--              <li class="widget-card widget-list__item">-->
+<!--                <img class="widget__img" src="img/mini-pic.png" alt="#" >-->
+<!--              </li>-->
+<!--              <li class="widget-card widget-list__item">-->
+<!--                <img class="widget__img" src="img/mini-pic.png" alt="#" >-->
+<!--              </li>-->
             </ul>
             <div class="widget__button-container">
               <button class="button button_light"><span class="visually-hidden">Turn to light mode</span></button>
@@ -78,11 +78,32 @@
             </div>
           </div>
     </section>
-    <figure class="collection__big-picture big_picture">
-      <img src="img/big-pic.jpg"alt="#">
+    <figure class="collection__big-picture big-picture">
+<!--        <img class="big-picture__lamp" src="img/medium-pic.png" alt="#">-->
+      <img class="big-picture__back" src="img/big-pic-day.jpg" alt="Light mode">
       <figcaption class="visually-hidden">Большая картинка</figcaption>
     </figure>
   </section>
 </main>
+
+  <template id="widget-card">
+    <li class="widget-card widget-list__item">
+      <img class="widget__img"  src="#" alt="#" >
+    </li>
+  </template>
+<template id="feature-row">
+  <div class="features-list__row">
+    <dt class="features-list__term"></dt>
+    <dd class="features-list__definition"></dd>
+  </div>
+</template>
+<template id="single-lamp-img">
+    <img class="info__img" src="#" alt="#">
+</template>
+<template id="lamp-with-back">
+    <img class="big-picture__lamp" src="#" alt="#">
+</template>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script type="module" src="js/script.js"></script>
 </body>
 </html>

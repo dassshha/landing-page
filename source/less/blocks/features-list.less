@@ -2,11 +2,20 @@
   font-size: @feature-list-text-font-size;
   width: 70%;
   .make-overflow(50%);
+  .set-preloader();
 
 
   &__term {
-    font-weight: bold;
+    font-weight: 900;
 
+  }
+
+  &__definition {
+    font-weight: 100;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
   }
 
   &__row {
