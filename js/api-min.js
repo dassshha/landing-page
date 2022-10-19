@@ -1,0 +1,1 @@
+const URL="https://private-anon-62b9b889cf-lampshop.apiary-mock.com/lamps";export const getLamps=async()=>{let t=await fetch(URL);if(200===t.status)return await t.json();throw new Error("Wrong request")};

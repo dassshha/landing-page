@@ -1,0 +1,1 @@
+export const fillLocalStorage=o=>(localStorage.clear(),o.forEach(o=>{localStorage.setItem(o.id,JSON.stringify(o))}),o);

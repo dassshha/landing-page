@@ -1,0 +1,1 @@
+import{getLamps}from"./api.js";import{fillWidget}from"./widget-list.js";import{fillLocalStorage}from"./data.js";import{addModeSwitchersToButtons}from"./mode-button.js";$(function(){addModeSwitchersToButtons(),getLamps().then(t=>fillLocalStorage(t)).then(t=>{fillWidget(t),$("#1").click()}).catch(t=>console.log(t))});

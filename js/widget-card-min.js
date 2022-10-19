@@ -1,0 +1,1 @@
+import{fillData}from"./fill.js";import{onButtonLightModeClicked}from"./mode-button.js";const makeActive=t=>{$(".widget-card").removeClass("widget-card_active"),$(`#${t}`).addClass("widget-card_active")};export const onWidgetCardClicked=async t=>{const e=t.currentTarget.id;makeActive(e),onButtonLightModeClicked();const a=await JSON.parse(localStorage.getItem(e));fillData(a)};

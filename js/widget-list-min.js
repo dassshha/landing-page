@@ -1,0 +1,1 @@
+import{onWidgetCardClicked}from"./widget-card.js";export const fillWidget=t=>{const i=$("#widget-card").contents(),d=t.map(t=>{const d=i.clone();return d.attr("id",t.id),d.find(".widget__img").attr("src",t.image).attr("alt",t.name),d.click(onWidgetCardClicked),d});$("#widget-list").append(d),$(".widget-list").css("background-image","none")};
