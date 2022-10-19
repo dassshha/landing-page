@@ -22,4 +22,6 @@ npm run build
 npm run
 ```
 **P.S: Для получения данных с сервера может понадобиться VPN**.
+
+
 Готовый проект можно посмотреть на GithubPages - https://dassshha.github.io/landing-page/
